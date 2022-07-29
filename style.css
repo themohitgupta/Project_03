@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b2922;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar,
+.hero {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar div:first-child img {
+  height: 50px;
+}
+
+.navbar div:nth-child(2) {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.list-item {
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.list-item:first-child {
+  opacity: 1;
+}
+
+.nav-btn {
+  font-size: 20px;
+  background-color: #2b2922;
+  color: #9d8c35;
+  padding: 12px 36px;
+  border: 2px solid #9d8c35;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.nav-btn:hover {
+  box-shadow: 0 0 20px #9d8c35;
+}
+
+.hero {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  color: #fff;
+}
+
+.hero-heading {
+  font-size: 68px;
+  text-transform: capitalize;
+}
+
+.hero-description {
+  text-align: start;
+  opacity: 0.8;
+}
+
+.hero-image {
+  height: 40vh;
+  width: 100%;
+  background: url(assets/pexels-ekaterina-bolovtsova-6077326.jpg);
+  background-size: cover;
+  background-position-y: -240px;
+}
